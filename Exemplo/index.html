@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript — Laboratório</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            color: #172033;
+        }
+        header {
+            padding: 48px 20px;
+            background: #172033;
+            color: white;
+        }
+        main {
+            width: min(1000px, 92%);
+            margin: 40px auto;
+        }
+        section {
+            margin-bottom: 24px;
+            padding: 24px;
+            background: white;
+            border-radius: 12px;
+            border: 1px solid #dce1e7;
+        }
+        code {
+            padding: 2px 6px;
+            background: #eef1f5;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px 16px;
+            cursor: pointer;
+        }
+        #resultado {
+            margin-top: 16px;
+            padding: 16px;
+            background: #eef1f5;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>JavaScript — Laboratório</h1>
+    <p>Use esta página para experimentar os conceitos das aulas.</p>
+</header>
+
+<main>
+
+    <section>
+        <h2>08 — DOM</h2>
+        <h3 id="titulo">Título original</h3>
+        <p id="mensagem">Altere este conteúdo utilizando JavaScript.</p>
+        <button id="botao">Alterar texto</button>
+    </section>
+
+    <section>
+        <h2>09 — Eventos</h2>
+        <button id="contador">Clique aqui</button>
+        <p>Cliques: <strong id="valor-contador">0</strong></p>
+    </section>
+
+    <section>
+        <h2>10 — Formulários</h2>
+        <form id="formulario">
+            <input id="nome" type="text" placeholder="Digite seu nome" required>
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="resultado"></div>
+    </section>
+
+</main>
+
+<!--
+    Para estudar as aulas de fundamentos, abra o arquivo JS
+    correspondente e execute o código no console do navegador.
+
+    As aulas de DOM/eventos/formulários são carregadas abaixo.
+-->
+<script src="08-dom.js"></script>
+<script src="09-eventos.js"></script>
+<script src="10-formularios.js"></script>
+
+</body>
+</html>
